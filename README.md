@@ -4,15 +4,6 @@ FOODFY
 A Foody é uma empresa fictícia para qual criamos um site que mostra
 deliciosas receitas.
 
-Necessário para rodar:
-----------------------
-
-Para rodar esta aplição você precisará apenas do node.js intalado em sua
-máquina, todas as dependências já estão inclusas. \
- Código para iniciar o servidor local:
-
-npm start
-
 Tecnologia utilizadas:
 ----------------------
 
@@ -23,6 +14,15 @@ Nunjucks
 Javascript
 
 Node js
+
+Necessário para rodar:
+----------------------
+
+Para rodar esta aplição você precisará apenas do node.js intalado em sua
+máquina, todas as dependências já estão inclusas. \
+ Código para iniciar o servidor local:
+
+npm start
 
 Páginas:
 ========
