@@ -46,7 +46,7 @@ Detalhes da Receita:
 --------------------
 
 Os dados dessa página são trazidos de forma dinâmica. Estão todos
-armazenados num arquivo js, que es†á servindo como um data base.
+armazenados num arquivo js, que está servindo como um data base.
 
 ![]()![](/readme-content/receita1.png)
 
