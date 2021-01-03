@@ -25,7 +25,6 @@ Esse projeto está sendo desenvolvido durante o curso LaunchBase - [RocketSeat](
 A parte mais básica já está pronta, como o próprio servidor, rotas e layout. Ainda vou implementar a parte de cadastro de usuário e receitas, além da área de administração e outras coisas.
 
 ## :robot: Tecnologias utilizadas:
-----------------------
 
 * HTML, CSS e Javascript;
 * Node js;
@@ -46,7 +45,7 @@ sistema de links criado com o Nunjucks
 Sobre:
 ------
 
-Page com textos fictícios, só para constar
+*textos fictícios*
 
 ![](/readme-content/sobre.png)
 
