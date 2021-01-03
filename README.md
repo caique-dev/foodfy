@@ -8,10 +8,11 @@
 
 ## :notebook: Sumário
 
-* <a href="#rocket-sobre-a-aplica%C3%A7%C3%A3o">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-* <a href="#robot-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-* <a href="#zap-como-executar-a-aplica%C3%A7%C3%A3o-em-sua-m%C3%A1quina">Como executar em sua máquina</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-* <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+* <a href="#rocket-sobre-a-aplica%C3%A7%C3%A3o">Sobre a aplicação</a>
+* <a href="#robot-tecnologias-utilizadas">Tecnologias</a>
+* <a href="https://github.com/caique-dev/foodfy#rocket-sobre-a-aplica%C3%A7%C3%A3o">Preview</a>
+* <a href="#zap-como-executar-essa-aplicação-em-sua-máquina">Como executar em sua máquina</a>
+* <a href="#memo-licença">Licença</a>
 * <a href="#telephone_receiver-contatos">Contatos</a>
 
 
@@ -23,7 +24,7 @@ Esse projeto está sendo desenvolvido durante o curso LaunchBase - [RocketSeat](
 
 A parte mais básica já está pronta, como o próprio servidor, rotas e layout. Ainda vou implementar a parte de cadastro de usuário e receitas, além da área de administração e outras coisas.
 
-## :robot: Tecnologia utilizadas:
+## :robot: Tecnologias utilizadas:
 ----------------------
 
 * HTML, CSS e Javascript;
@@ -95,7 +96,7 @@ Feito isso, abra o seu navegador e acesse `http://localhost:5000/`
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
 ## :telephone_receiver: Contatos
 
