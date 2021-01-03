@@ -1,6 +1,6 @@
 {
-  "name": "Foodfy",
-  "main": "scripts.js",
+  "name": "foodfy",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },

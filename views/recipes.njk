@@ -21,6 +21,7 @@
 
         <h2>Mais acessadas</h2>
         <div class="row">
+            
             {% for card in cards %}
                 <a target="_blank" href="/recipe/{{card.ID}}">
                     <div class="card"> 
@@ -35,4 +36,6 @@
     </main>
 {% endblock %}
     
-{% block script %} <script src="/scripts.js"></script> {% endblock script %}
+{% block script %} 
+    <script src="/scripts.js"></script> 
+{% endblock script %}
