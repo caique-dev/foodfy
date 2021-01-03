@@ -3,6 +3,7 @@ const nunjucks = require('nunjucks')
 const routes = require('./routes')
 
 const server = express()
+const port = 5000
 
 server.use(express.static("public"))
 server.use(routes)
@@ -15,6 +16,7 @@ nunjucks.configure("views", {
     autoescape: false
 })
 
-server.listen(3000, () => {
-    console.log("server runnig")
+server.listen(port, () => {
+    console.log(`O Seridor está ligado e pode ser acessado em http://localhost:${port}`)
+    console.log('Para desligar o servidor, tecle "ctrl + c" aqui no terminal')
 })
