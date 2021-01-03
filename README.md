@@ -10,7 +10,7 @@
 
 * <a href="#rocket-sobre-a-aplica%C3%A7%C3%A3o">Sobre a aplicação</a>
 * <a href="#robot-tecnologias-utilizadas">Tecnologias</a>
-* <a href="https://github.com/caique-dev/foodfy#rocket-sobre-a-aplica%C3%A7%C3%A3o">Preview</a>
+* <a href="#eyes-preview">Preview</a>
 * <a href="#zap-como-executar-essa-aplicação-em-sua-máquina">Como executar em sua máquina</a>
 * <a href="#memo-licença">Licença</a>
 * <a href="#telephone_receiver-contatos">Contatos</a>
@@ -104,4 +104,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 [![Linkedin Badge](https://img.shields.io/badge/-caiquepinheiro@icloud.com-red?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:caiquepinheiro@icloud.com)](mailto:caiquepinheiro@icloud.com)
 [![Rocktseat](https://img.shields.io/badge/-Caique%20Andrade-%239466FF?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAALVBMVEVHcExxWsF0XMJzXMJxWcFsUsD///9jRrzY0u6Xh9Gsn9n39fyMecy0qd2bjNJWBT0WAAAABHRSTlMA2Do606wF2QAAAGlJREFUGJVdj1cWwCAIBLEsRU3uf9xobDH8+GZwUYi8i6ucJwrxKE+7D0G9Q4vlYqtmCSjndr4CgCgzlyFgfKfKCVO0LrPKjmiqMxGXkJwNnXskqWG+1oSM+BSwD8f29YLNjvx/OQrn+g99oQSoNmt3PgAAAABJRU5ErkJggg==)](https://app.rocketseat.com.br/me/caique-andrade-1591990375)
 
-Desenvolvido com :heart: por Caique Andrade
+Desenvolvido com :heart: por [Caique Andrade](https://www.linkedin.com/in/caique-andrade-8a8153189/)
