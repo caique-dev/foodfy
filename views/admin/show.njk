@@ -3,9 +3,11 @@
 {% block content %}
     <div class="show">
         <section class="food">
-            <header>
+            <header class="header_botoes">
                 <h2>Recita: {{ recipe.title }} </h2>
-                <a href="/admin/{{ recipe.ID }}/edit">Editar receita</a>
+                <div class="botoes">
+                    <a class="botao" href="/admin/{{ recipe.ID }}/edit">Editar receita</a>
+                </div>
             </header>
 
             <img class="img-rad" src="{{ recipe.image }}" alt="{{ recipe.title }}">

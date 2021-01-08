@@ -1,7 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
 
 :root {
-    --cum: #111
+    --primary-color: var(--primary-color);
+    --color-blue: #6558C3;
 }
 
 * {
@@ -18,7 +19,7 @@ body {
 
 h1, h2, a {
     font-weight: 700;
-    color: var(--cum);
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -179,7 +180,7 @@ main {
 
 section h1, section h2 {
     margin: 0 0 20px 0;
-    color: var(--cum);
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 24;
 }
@@ -208,7 +209,7 @@ section p {
 .food h2 {
     margin: 50px auto 4px;
     font-size: 36px;
-    color: var(--cum)
+    color: var(--primary-color)
 }
 
 .food p {
@@ -222,7 +223,7 @@ section p {
 
 .info h3 {
     font-size: 24px;
-    color: var(--cum);
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
@@ -257,7 +258,7 @@ footer {
 .admin_index h1 {
     margin: 50px 0 30px;
     font: 700 24px 'Roboto';
-    color: #111;
+    color: var(--primary-color);
 }
 
 .grid {
@@ -295,23 +296,76 @@ footer {
 
 /* ADMIN SHOW */
 
-.show .food header {
+.header_botoes {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.show .food header h2 {
+.header_botoes h2 {
     margin: 0;
     font: 700 24px 'Roboto';
-    color: #111;
+    color: var(--primary-color);
 }
 
-.show .food header a {
+.header_botoes .botao {
     font: 700 16px 'Roboto';
     color: #fff;
     background-color: #6558C3;
     padding: 9px 20px;
     border-radius: 4px;
+    margin-left: 10px;
 }
+
+.header_botoes .botao.delete {
+    background-color: #DC4747;
+}
+
+/* FORM */
+
+.form_compartilhado {
+    margin-top: 10px;
+}
+
+.form_compartilhado .item {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.form_compartilhado .item div:first-child {
+    font: 700 16px 'Roboto';
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.form_compartilhado .item div input,
+.form_compartilhado .item div textarea {
+    font: 400 16px 'Roboto';
+    color: var(--primary-color);
+    width: 100%;
+    padding: 15px 0 15px 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.form_compartilhado .item div textarea {
+    padding: 18px 43px 0 22px;
+    min-height: 257px;
+    resize: vertical;
+}
+
+.add_item {
+    font: 700 16px 'Roboto';
+    color: var(--color-blue);
+    display: inline-block;
+    margin-top: 5px;
+    transition: opacity .4s;
+    cursor: pointer;
+}
+
+.add_item:hover {
+    opacity: .7;
+}
+/* ADMIN EDITAR */

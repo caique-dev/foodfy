@@ -1,0 +1,17 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+    <div class="edit">
+        <div class="header_botoes">
+            <h2>Editando receita: {{ recipe.title }}</h2>
+            <div class="botoes">
+                <button type="submit" class="botao delete">Deletar</button>
+                <button type="submit" class="botao">Salvar receita</button>
+            </div>
+        </div>
+
+        <form class="form_compartilhado" action="">
+            {% include 'admin/fields.njk'%}
+        </form>
+    </div>
+{% endblock content %}
