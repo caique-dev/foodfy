@@ -22,17 +22,17 @@ h1, h2, a {
     text-decoration: none;
 }
 
-header {
+.header_principal {
     padding: 30px 0;
     display: flex;
     align-items: center;
 }
 
-header img {
+.header_principal img {
     margin-right: 60px;
 }
 
-header a {
+.header_principal a {
     font-size: 16px;
     font-weight: 400;
     transition: font-weigth .7s;
@@ -41,7 +41,7 @@ header a {
     padding: 0 1px;
 }
 
-header a:hover {
+.header_principal a:hover {
     padding: 0.5px;
 }
 
@@ -55,7 +55,7 @@ main {
     min-height: calc(100vh - 115px);
 }
 
-.tecipes h2 {
+.recipes h2 {
     margin: 70px 0 20px;
     font-size: 24px;
 }
@@ -291,4 +291,27 @@ footer {
 .grid .item a {
     font: 700 14px 'Roboto';
     color: #6558C3;
+}
+
+/* ADMIN SHOW */
+
+.show .food header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.show .food header h2 {
+    margin: 0;
+    font: 700 24px 'Roboto';
+    color: #111;
+}
+
+.show .food header a {
+    font: 700 16px 'Roboto';
+    color: #fff;
+    background-color: #6558C3;
+    padding: 9px 20px;
+    border-radius: 4px;
 }

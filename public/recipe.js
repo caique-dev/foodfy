@@ -1,14 +1,14 @@
-const daddy = document.querySelectorAll(".localiza")
+const elements = document.querySelectorAll(".localiza")
 let visibility = true
 
-for (let sujeito of daddy)  {
-    sujeito.querySelector("span").addEventListener("click", () => {
-        sujeito.classList.toggle("some")
+for (let element of elements)  {
+    element.querySelector("span").addEventListener("click", () => {
+        element.classList.toggle("some")
         if (visibility == true) {
-            sujeito.querySelector("span").innerHTML = "esconder"
+            element.querySelector("span").innerHTML = "esconder"
             visibility = false
         } else {
-            sujeito.querySelector("span").innerHTML = "mostrar"
+            element.querySelector("span").innerHTML = "mostrar"
             visibility = true
         }
     })

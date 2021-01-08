@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="admin_index">
-        <h1>Gerenciar recietas</h1>
+        <h1>Gerenciar receitas</h1>
         <div class="grid">
             {% for recipe in recipes %}
                 <div class="item">
@@ -12,7 +12,7 @@
                     <div>
                         <h2>{{ recipe.title }} </h2>
                         <p>{{ recipe.author }} </p>
-                        <a href="">Visualizar</a>
+                        <a href="/admin/{{ recipe.ID }}">Visualizar</a>
                     </div>
                 </div>
             {% endfor %}
