@@ -17,6 +17,6 @@ nunjucks.configure("views", {
 })
 
 server.listen(port, () => {
-    console.log(`O Seridor está ligado e pode ser acessado em http://localhost:${port}`)
+    console.log(`O servidor está ligado e pode ser acessado em http://localhost:${port}`)
     console.log('Para desligar o servidor, tecle "ctrl + c" aqui no terminal')
 })

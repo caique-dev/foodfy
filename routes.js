@@ -17,4 +17,8 @@ routes.get("/recipe/:index", (req, res) => {
     res.render("recipe", { recipes: recipes[recipeIndex] })
 })
 
+routes.get('/admin', (req, res) => {
+    res.render('admin/index', { recipes })
+})
+
 module.exports = routes
