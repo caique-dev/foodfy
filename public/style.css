@@ -316,6 +316,7 @@ footer {
     padding: 9px 20px;
     border-radius: 4px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .header_botoes .botao.delete {

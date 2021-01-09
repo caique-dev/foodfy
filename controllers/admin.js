@@ -18,21 +18,13 @@ exports.create = (req, res) => {
     res.render('admin/create', { create: true })
 }
 
-exports.edit = (req, res) => {
-    const { id } = req.params
-
-    const foundRecipe = data.recipes.find( recipe => recipe.id == id )
-    if (!foundRecipe) return res.send('Receita não encontrada!')
-
-    return res.render('admin/edit', { recipe: foundRecipe })
-}
-
 exports.post = (req, res) => {
     console.log('cheguei')
     const keys = Object.keys(req.body)
     
     for (const key of keys) {
-        if (req.body[key] == '') return res.send('Preencha todos os campos!!')
+        if (key != 'aditional_information' && req.body[key] == '') return res.send('Preencha todos os campos!!')
+        if (key == 'Ingredients' || key == 'steps') console.log( 'ok ')
     }
 
     let id = 1
@@ -52,6 +44,15 @@ exports.post = (req, res) => {
     })
 
     return res.redirect(`/admin/${ id }`)
+}
+
+exports.edit = (req, res) => {
+    const { id } = req.params
+
+    const foundRecipe = data.recipes.find( recipe => recipe.id == id )
+    if (!foundRecipe) return res.send('Receita não encontrada!')
+
+    return res.render('admin/edit', { recipe: foundRecipe })
 }
 
 exports.put = (req, res) => {
@@ -78,4 +79,18 @@ exports.put = (req, res) => {
     fs.writeFile('data.json', JSON.stringify(data, null, 2), error => {if (error) res.send("Erro na gravação do arquivo!")})
 
     return res.redirect(`/admin/${ id }`)
+}
+
+exports.delete = (req, res) => {
+    const { id } = req.body
+
+    const recipesFiltered = data.recipes.filter( recipe => {
+        if (recipe.id != id) return true
+    })
+
+    data.recipes = recipesFiltered
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), error => {if (error) res.send('Erro na gravação do arquivo')})
+
+    return res.redirect('/admin')
 }
