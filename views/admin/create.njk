@@ -4,10 +4,14 @@
     <div class="header_botoes">
         <h2>Criando receita</h2>
         <div class="botoes">
-            <button class="botao">Salvar receita</button>
+            <button class="botao" type="submit" form="form_create">Salvar receita</button>
         </div>
     </div>
-    <form class="form_compartilhado" action="/">
+    <form id="form_create" class="form_compartilhado" action="/admin" method="POST">
         {% include 'admin/fields.njk'%}
     </form>
 {% endblock content %}
+
+{% block script %}
+    <script src="/add_item.js"></script>
+{% endblock script %}

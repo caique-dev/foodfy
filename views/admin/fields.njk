@@ -1,31 +1,55 @@
 <label class="item">
     <div>Imagem da receita</div>
     <div>
-        <input type="url" name="photo">
+        <input type="text" name="photo" value="{{ recipe.photo }}">
     </div>
 </label>
 
 <label class="item">
+    <div>Título da receita</div>
+    <div>
+        <input type="text" name="title" value="{{ recipe.title }}">
+    </div>
+</label>
+
+<label class="item">
+    <div>Autor(a)</div>
+    <div>
+        <input type="text" name="author" value="{{ recipe.author }}">
+    </div>
+</label>
+
+<div class="item">
     <div>Ingredientes</div>
-    <div>
-        <input type="text" name="ingredients[]">
-        <input type="text" name="ingredients[]">
-    </div>
-    <span class="add_item">Adicionar novo ingrediente</span>
-</label>
+    <div id="father_ingredients">
+        {% if create == true %}
+            <input type="text" name="ingredients[]" value="{{ ingredient }}">
+        {% endif %}
 
-<label class="item">
-    <div>Modo de preparo</div>
-    <div>
-        <input type="text" name="preparation[]">
-        <input type="text" name="preparation[]">
+        {% for ingredient in recipe.ingredients %}
+            <input type="text" name="ingredients[]" value="{{ ingredient }}">
+        {% endfor %}
     </div>
-    <span class="add_item">Adicionar novo ingrediente</span>
-</label>
+    <span class="add_item ingredient">Adicionar novo ingrediente</span>
+</div>
+
+<div class="item">
+    <div>Modo de preparo</div>
+    <div id="father_steps">
+        {% if create == true %}
+            <input type="text" name="steps[]" value="{{ step }}">
+        {% endif %}
+
+        {% for step in recipe.preparation %}
+            <input type="text" name="steps[]" value="{{ step }}">
+        {% endfor %}
+    </div>
+    <span class="add_item step">Adicionar novo passo</span>
+</div>
 
 <label class="item">
     <div>Informações adicionais</div>
     <div>
-        <textarea name="aditional_information"></textarea>
+        <textarea name="aditional_information">{{ recipe.aditional_information }}</textarea>
     </div>
 </label>

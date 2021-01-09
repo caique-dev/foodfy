@@ -5,13 +5,22 @@
         <div class="header_botoes">
             <h2>Editando receita: {{ recipe.title }}</h2>
             <div class="botoes">
-                <button type="submit" class="botao delete">Deletar</button>
-                <button type="submit" class="botao">Salvar receita</button>
+                <button form="form_delete" type="submit" class="botao delete">Deletar</button>
+                <button form="form_edit" type="submit" class="botao">Salvar receita</button>
             </div>
         </div>
 
-        <form class="form_compartilhado" action="">
+        <form action="/admin?_method=DELETE" method="POST" id="form_delete">
+            <input type="hidden" name="id" value="{{ recipe.id }}">
+        </form>
+
+        <form class="form_compartilhado" action="/admin?_method=PUT" method="POST" id="form_edit">
+            <input type="hidden" name="id" value="{{ recipe.id }}">
             {% include 'admin/fields.njk'%}
         </form>
     </div>
 {% endblock content %}
+
+{% block script %}
+    <script src="/add_item.js"></script>
+{% endblock script %}

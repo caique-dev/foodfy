@@ -4,13 +4,13 @@
     <div class="show">
         <section class="food">
             <header class="header_botoes">
-                <h2>Recita: {{ recipe.title }} </h2>
+                <h2>Receita: {{ recipe.title }} </h2>
                 <div class="botoes">
-                    <a class="botao" href="/admin/{{ recipe.ID }}/edit">Editar receita</a>
+                    <a class="botao" href="/admin/{{ recipe.id }}/edit">Editar receita</a>
                 </div>
             </header>
 
-            <img class="img-rad" src="{{ recipe.image }}" alt="{{ recipe.title }}">
+            <img class="img-rad" src="{{ recipe.photo }}" alt="{{ recipe.title }}">
             <h2>{{ recipe.title }}</h2>
             <p>{{ recipe.author }}</p>
         </section>
@@ -18,22 +18,22 @@
         <section class="info">
             <div>
                 <h3>Ingredientes</h3>
-                {% for ingredientes in recipe.ingredients %}
-                    <li>{{ ingredientes }}</li>
+                {% for ingredients in recipe.ingredients %}
+                    <li>{{ ingredients }}</li>
                 {% endfor %}
             </div>
 
             <div>
                 <h3>Modo de preparo</h3>
-                {% for passo in recipe.preparation %}
-                    <li>{{ passo }}</li>
+                {% for step in recipe.preparation %}
+                    <li>{{ step }}</li>
                 {% endfor %}
             </div>
 
-            {% if recipe.information != 0 %}
+            {% if recipe.aditional_information != 0 %}
                 <div>
                     <h3>Informações adicionais</h3>
-                    <p>{{ recipe.information }}</p>
+                    <p>{{ recipe.aditional_information }}</p>
                 </div>
             {% endif %}
         </section>
