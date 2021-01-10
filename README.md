@@ -55,12 +55,12 @@ sistema de links criado com o Nunjucks
 ### Detalhes da Receita:
 
 Os dados dessa página são trazidos de forma dinâmica. Estão todos armazenados num arquivo js, que está servindo como um data base.
+*O item "informações adicionais" só aparece quando não está vazio, isso é controlado através de uma condicional do nunjucks*
 
 ![]()![](/readme-content/receita1.png)
 
 ![]()![](/readme-content/receita2.png)
 
-*O item "informações adicionais" só aparece quando não está vazio, isso é controlado através de uma condicional do njk*
 
 ## *Área de administração*
 
@@ -73,15 +73,15 @@ Os dados dessa página são trazidos de forma dinâmica. Estão todos armazenado
 
 ![]()![](/readme-content/adm_index.png)
 
-### Criar  uma nova receita
+### Criar uma nova receita
 
 ![]()![](/readme-content/adm_create.png)
 
-### Visualizar a receita
+### Visualização de uma receita
 
 ![]()![](/readme-content/adm_show.png)
 
-### Editar a receita
+### Editar uma receita
 
 ![]()![](/readme-content/adm_edit.png)
 
