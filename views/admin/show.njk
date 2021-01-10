@@ -34,10 +34,10 @@
                 {% endfor %}
             </div>
 
-            {% if recipe.aditional_information != 0 %}
+            {% if recipe.aditional_information != '' %}
                 <div>
                     <h3>Informações adicionais</h3>
-                    <p>{{ recipe.aditional_information }}</p>
+                    <p>{{ recipes.aditional_information }}</p>
                 </div>
             {% endif %}
         </section>

@@ -1,7 +1,7 @@
-const recipes = require("../data.json")
+const data = require("../data.json")
 
 exports.index = (req, res) => {
-    res.render("recipes", { cards: recipes.recipes })
+    res.render("recipes", { cards: data.recipes })
 }
 
 exports.about = (req, res) => {
@@ -11,7 +11,9 @@ exports.about = (req, res) => {
 exports.show = (req, res) => {
     const recipeIndex = req.params.index
 
-    res.render("recipe", { recipes: recipes.recipes[recipeIndex] })
+    const foundRecipe = data.recipes.find( recipe => recipe.id == recipeIndex)
+
+    res.render("recipe", { recipe: foundRecipe })
 }
 
 exports.login = (req, res) => {

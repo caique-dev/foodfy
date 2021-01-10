@@ -20,49 +20,72 @@
 
 Esse projeto está sendo desenvolvido durante o curso LaunchBase - [RocketSeat](https://rocketseat.com.br/). A aplicação **Foodfy** serve como uma exposição de receitas. Nessa etapa do curso estamos aprendendo a criar um servidor HTTP com *Express* e também tudo que é necessário para gerenciarmos esse servidor, desde a criação das rotas, persistência dos dados e etc até a configuração e utilização do *Nunjucks*, o template engine utilizado para deixar o HTML mais dinâmico e flexível. **Ainda em desenvolvimento**.
 
-#### O que ainda está por vir
+### :bulb: Ideias que ainda vou implementar
 
 A parte mais básica já está pronta, como o próprio servidor, rotas e layout. Ainda vou implementar a parte de cadastro de usuário e receitas, além da área de administração e outras coisas.
 
+- [ ] Responsividade - Nos dias de hoje os celulares são muito utilizados para acessar a internet, por isso a reponsividade é indispensável;
+- [ ] Login - Implementar um login e cadastro de usuários funcional
+- [ ] BD - Mover todos os dados da aplicação para um Banco de dados
+
 ## :robot: Tecnologias utilizadas:
 
-* HTML, CSS e Javascript;
-* Node js;
-* Express;
-* Nunjucks;
-* nodemon;
+* Express - Dependência utilizada para criar e gerenciar nosso servidor HTTP;
+* Nunjucks - Dep. Utilizada como Template Engine, para usufruirmos de um HTML dinâmico;
+* Nodemon - Dep. que reinicia o servidor a cada atualização nos arquivos observados;
+* Browser Sync - Dep. que atualiza o navegador a cada atualização nas pastas observadas;
+* NPM Run All - Dep. que possibilita rodar paralelamente o Nodemon e o Browser Sync;
+* HTML, CSS e JavaScript
 
 ## :eyes: Preview:
 
-Home:
------
+### Home:
 
 Cada "card" de receita aqui leva para a respectiva receita com um
 sistema de links criado com o Nunjucks
 
 ![](/readme-content/home.png)
 
-Sobre:
-------
+### Sobre:
 
 *textos fictícios*
 
 ![](/readme-content/sobre.png)
 
-Detalhes da Receita:
---------------------
+### Detalhes da Receita:
 
-Os dados dessa página são trazidos de forma dinâmica. Estão todos
-armazenados num arquivo js, que está servindo como um data base.
+Os dados dessa página são trazidos de forma dinâmica. Estão todos armazenados num arquivo js, que está servindo como um data base.
 
 ![]()![](/readme-content/receita1.png)
 
 ![]()![](/readme-content/receita2.png)
 
-Note que o item "informações adicionais" só aparece quando não está
-vazio, isso é controlado através de uma condicional do njk
+*O item "informações adicionais" só aparece quando não está vazio, isso é controlado através de uma condicional do njk*
 
-![]()![](/readme-content/receita3.png)
+## *Área de administração*
+
+### Login
+
+![]()![](/readme-content/login.png)
+
+
+### Listagem das receitas
+
+![]()![](/readme-content/adm_index.png)
+
+### Criar  uma nova receita
+
+![]()![](/readme-content/adm_create.png)
+
+### Visualizar a receita
+
+![]()![](/readme-content/adm_show.png)
+
+### Editar a receita
+
+![]()![](/readme-content/adm_edit.png)
+
+
 
 ## :zap: Como executar essa aplicação em sua máquina
 
