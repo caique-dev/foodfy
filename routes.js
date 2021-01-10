@@ -4,9 +4,11 @@ const admin = require('./controllers/admin')
 
 const routes = express.Router()
 
-routes.get("/", public_acess.index)
-routes.get("/sobre", public_acess.about)
+routes.get("/", (req, res) => res.redirect('/recipes'))
+routes.get("/recipes", public_acess.index)
+routes.get("/about", public_acess.about)
 routes.get("/recipe/:index", public_acess.show)
+routes.get('/login', public_acess.login)
 
 routes.get('/admin', admin.index)
 routes.get('/admin/create', admin.create)

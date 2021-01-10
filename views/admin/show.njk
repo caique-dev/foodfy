@@ -19,14 +19,18 @@
             <div>
                 <h3>Ingredientes</h3>
                 {% for ingredients in recipe.ingredients %}
-                    <li>{{ ingredients }}</li>
+                    {% if ingredients != "" %}
+                        <li>{{ingredients}} </li>
+                    {% endif %}
                 {% endfor %}
             </div>
 
             <div>
                 <h3>Modo de preparo</h3>
                 {% for step in recipe.preparation %}
-                    <li>{{ step }}</li>
+                    {% if step != "" %}
+                        <li>{{step}} </li>
+                    {% endif %}
                 {% endfor %}
             </div>
 

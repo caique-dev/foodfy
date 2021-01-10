@@ -24,9 +24,9 @@
         <div class="row">
             
             {% for card in cards %}
-                <a target="blank" href="/recipe/{{card.ID}}">
+                <a target="blank" href="/recipe/{{card.id}}">
                     <div class="card"> 
-                        <img class="img-rad" src="{{card.image}}" alt="{{card.title}}">
+                        <img class="img-rad" src="{{card.photo}}" alt="{{card.title}}">
                         <h3>{{card.title}}</h3>
                         <p>{{card.author}}</p>
                     </div>

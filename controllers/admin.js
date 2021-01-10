@@ -19,12 +19,10 @@ exports.create = (req, res) => {
 }
 
 exports.post = (req, res) => {
-    console.log('cheguei')
     const keys = Object.keys(req.body)
     
     for (const key of keys) {
         if (key != 'aditional_information' && req.body[key] == '') return res.send('Preencha todos os campos!!')
-        if (key == 'Ingredients' || key == 'steps') console.log( 'ok ')
     }
 
     let id = 1
@@ -42,7 +40,7 @@ exports.post = (req, res) => {
     fs.writeFile('data.json', JSON.stringify(data, null, 2), (error) => {
         if (error) return res.send('Problema na gravação do arquivo!') 
     })
-
+    
     return res.redirect(`/admin/${ id }`)
 }
 
@@ -76,9 +74,11 @@ exports.put = (req, res) => {
 
     data.recipes[index] = recipeEdited
 
-    fs.writeFile('data.json', JSON.stringify(data, null, 2), error => {if (error) res.send("Erro na gravação do arquivo!")})
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), error => {
+        if (error) res.send("Erro na gravação do arquivo!")
+    })
 
-    return res.redirect(`/admin/${ id }`)
+        return res.redirect(`/admin/${ id }`)
 }
 
 exports.delete = (req, res) => {
